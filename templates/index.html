@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Sentiment Analyzer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            height: 100vh;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #262626;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #262626;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #dbdbdb;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3897f0;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2878c5;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #262626;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📸 Instagram Sentiment Analyzer</h2>
+        <form method="post">
+            <input type="text" name="comment" placeholder="Type your comment here" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+            <h3>Predicted Sentiment: {{ prediction }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

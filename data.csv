@@ -1,0 +1,11 @@
+comment,sentiment
+I absolutely love this!,Positive
+This is the worst post ever.,Negative
+"It's okay, not great.",Neutral
+"Amazing content, keep it up!",Positive
+Not really impressed.,Negative
+Fantastic job!,Positive
+Terrible experience.,Negative
+This made my day!,Positive
+I don't like it.,Negative
+Looks decent to me.,Neutral
