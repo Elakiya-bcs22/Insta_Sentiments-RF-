@@ -1,4 +1,4 @@
-###Insta Sentiments — Instagram Sentiment Classifier (Random Forest) ###
+## Insta Sentiments — Instagram Sentiment Classifier (Random Forest) 
 
 A Python-based machine learning application that analyzes Instagram text (such as captions or comments) and classifies sentiment as **positive**, **negative**, or **neutral** using a **Random Forest** model.  
 This project is great for beginners looking to understand NLP, model training, and building prediction pipelines.
